@@ -4,7 +4,14 @@ import java.util.Scanner;
 
 public class BhusanTakeOut {
 	
+	
+	static double subtotal, tax, tip, grandTotal, perPerson;
+	static int trays, leftOvers;
+	
+	
+	
 	static Scanner input = new Scanner(System.in);
+
 	
 	public static void displayMainMenu() {
 		System.out.println("Choose Type Of Meal: \n1. Italian \n2.Chinese \n3.American");
@@ -26,42 +33,57 @@ public class BhusanTakeOut {
 	
 	}
 	
-	/*
+	
 	
 	public static int determineTrays(int people, int feeds) {
 		
+		trays = people/ feeds;
+		return trays;
+		
 		
 	}
-	public static double getSubtotal(double price, int trays) {
 	
+	public static double getSubtotal(double price, int trays) {
+		
+		subtotal = price * trays;
+		return subtotal;
+		
 		
 	}
 	
 	public static double getTax(double subtotal, double taxrate) {
 	
+		taxrate = 13/100;
+		tax = subtotal* taxrate;
+		return tax;
 		
 	}
 	
 	public static double getTip(double subtotal, double tipRate) {
-		
+		tip = (subtotal*7)/100;
+		return tip;
 		
 	}
 	
 	public static double getGrandTotal(double subtotal, double tax, double tip) {
 		
-		
+		grandTotal = subtotal + tip + tax;
+		return grandTotal;
 	}
 	
 	public static double pricePerPerson(double grandTotal, int people){
 		
-		
+		perPerson = grandTotal/people;
+		return perPerson;
 	}
 	
 	public static int determineLeftOvers( int feeds, int trays, int people) {
 		
+		leftOvers = (trays* feeds)% people;
+		return leftOvers;
 		
 	}
-	 */
+	 
 	
 	
 
