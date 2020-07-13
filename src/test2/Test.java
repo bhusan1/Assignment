@@ -140,7 +140,7 @@ public class Test {
 		System.out.println("Price for " + people + " people: " + price);
 		
 		BhusanTakeOut.getTax(subtotal, taxrate);
-		System.out.println("Tax: " + tax);
+		System.out.println("Tax: " );
 		
 		
 		
