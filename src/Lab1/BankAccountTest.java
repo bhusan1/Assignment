@@ -14,8 +14,10 @@ public class BankAccountTest {
 		
 		do {
 			System.out.println("What would you like to do? ");
-			System.out.println("1. Deposit /n 2. Deposit with interest ");
-			System.out.println("3. Withdraw/n 4. Withdraw with fee");
+			System.out.println("1. Deposit  ");
+			System.out.println("2. Deposit with interest");
+			System.out.println("3. Withdraw");
+			System.out.println("4. Withdraw with fee");
 			System.out.println("5. Check Balance ");
 			System.out.println("6. Exit ");
 			int choice = input.nextInt();
